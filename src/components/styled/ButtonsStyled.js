@@ -1,15 +1,19 @@
 import styled from "styled-components";
 
 export const NewQuoteButton = styled.button`
-  background-color: salmon;
+  background-color: transparent;
   border-radius: 10px;
   padding: 10px 25px;
-  border: none; 
+  border: 3px solid salmon; 
   font-family: inherit;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  color: #1d1d1e;
+  color: salmon;
+  &:hover{
+    background-color:salmon;
+    color:#1d1d1e;
+  }
 `
 
 export const TwitterButton = styled.a`
