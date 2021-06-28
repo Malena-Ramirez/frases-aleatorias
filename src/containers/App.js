@@ -5,6 +5,14 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin:0;
     font-family: 'Akaya Kanadaka', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    position: fixed;
   }
 `;
 
