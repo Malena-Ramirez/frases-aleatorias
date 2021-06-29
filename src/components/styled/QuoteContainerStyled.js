@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const QuoteIcon = styled.i`
   font-size: 60px;
-  color: salmon;
+  color:  ${props => props.color};
   @media (min-width: 768px) {
     margin-top: 20px;
   }

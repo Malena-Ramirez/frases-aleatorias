@@ -23,13 +23,13 @@ export const AppStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 15px solid salmon;
+  border: 15px solid ${props => props.color};
   margin: 0 20px; 
   padding: 20px 10px;
   @media (min-width: 768px) {
     width: 50vw;
     height: 50vh;
-    border: 30px solid salmon; 
+    border: 30px solid ${props => props.color}; 
     padding: 50px;
   }
 `

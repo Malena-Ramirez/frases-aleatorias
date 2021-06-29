@@ -4,24 +4,24 @@ export const NewQuoteButton = styled.button`
   background-color: transparent;
   border-radius: 10px;
   padding: 10px 25px;
-  border: 3px solid salmon; 
+  border: 3px solid ${props => props.color}; 
   font-family: inherit;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  color: salmon;
+  color: ${props => props.color};
   &:hover{
-    background-color:salmon;
+    background-color:${props => props.color};
     color:#1d1d1e;
   }
 `
 
 export const TwitterButton = styled.a`
   text-decoration: none;
-  color: salmon;
+  color: ${props => props.color};
   margin-top: 30px;
   font-size: 30px;
-  border: 2px solid salmon;
+  border: 2px solid ${props => props.color};
   border-radius: 50%;
   display: flex;
   align-items: center;
