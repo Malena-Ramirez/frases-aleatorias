@@ -25,7 +25,7 @@ class App extends Component {
       <AppStyled color={this.state.color}>
         <GlobalStyle />
         <QuoteContainer quote={this.state.quote} color={this.state.color} />
-        <QuoteButtons onClick={this.handleClick} color={this.state.color} />
+        <QuoteButtons onClick={this.handleClick} quote={this.state.quote} color={this.state.color} />
       </AppStyled>
     );
   }
