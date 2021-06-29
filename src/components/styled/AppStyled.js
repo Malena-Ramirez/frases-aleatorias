@@ -13,18 +13,23 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     position: fixed;
     text-align: center;
-    background-color: #1d1d1e;
+    background-color: #1d1d1e; 
   }
 `;
 
 export const AppStyled = styled.div`
-  width: 50vw;
-  height: 50vh;
   background-color: transparent;
-  border: 40px solid salmon; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  border: 15px solid salmon;
+  margin: 0 20px; 
+  padding: 20px 10px;
+  @media (min-width: 768px) {
+    width: 50vw;
+    height: 50vh;
+    border: 30px solid salmon; 
+    padding: 50px;
+  }
 `

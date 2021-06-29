@@ -31,4 +31,8 @@ export const TwitterButton = styled.a`
     transform:translateY(-5px);
     background-color: #333335;
   }
+  @media (min-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 `
