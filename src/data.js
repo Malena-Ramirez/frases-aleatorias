@@ -1,4 +1,4 @@
-const quotes = [
+let quotes = [
   {
     quote: "No hay caminos para la paz; la paz es el camino.",
     author: "Mahatma Gandhi"
@@ -40,5 +40,9 @@ const quotes = [
     author: "Henry Ford"
   }
 ];
+quotes.sort(() => Math.random() - 0.5);
 
-export default quotes;
+let backgroundColor = ["#FFFFFF", "#E6B0AA", "#C0392B", "#E74C3C", "#D7BDE2", "#9B59B6", "#E8DAEF", "#8E44AD", "#D4E6F1", "#5B2C6F", "#5499C7", "#2980B9", "#3498DB", "#A3E4D7", "#48C9B0", "#148F77", "#73C6B6", "#138D75", "#2ECC71", "#FCF3CF", "#F7DC6F", "#F1C40F", "#FAD7A0", "#F39C12", "#D68910", "#EB984E", "#D35400", "#ABB2B9", "#5F6A6A", "#EAEDED", "#F08080", "#FF00FF", "#FE2EF7", "#FFFF00"];
+backgroundColor.sort(() => Math.random() - 0.5);
+
+export { quotes, backgroundColor };
